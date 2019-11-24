@@ -1,0 +1,248 @@
+/* Global Settings */
+
+body {
+    text-transform: capitalize;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+span{
+    color: white;
+    margin-left: 20px;
+}
+p {
+    margin-top: 0px;
+}
+h2 {
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 20px;   
+}
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* Generic Css */
+/* Header */
+.header {
+    background-color: black;
+    height: 50px;
+    border-bottom: 10px solid white;
+}
+ul li {
+    color: white;
+    padding: 20px 0 10px 10px;
+}
+.logo {
+    height: 100%;
+    width: 3%;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    padding-left: 5px;
+}
+.main_nav {
+    height: 100%;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+.main_nav ul li {
+    height: 100%;
+    display: inline-block;
+    margin-left: 40px;
+    padding: 5px;
+}
+.search {
+    border: 1px solid rgb(56, 55, 55);
+    width: 20%;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    height: 100%;
+}
+.search .search_nxt {
+    font-size: 14px;
+    text-transform: uppercase !important;
+    color: gray;
+}
+.links {
+    height: 100%;
+    width: 8%;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+/* Main */
+.shoes ul li,.clothes ul li{
+    display: inline-block;
+} 
+.shoes,.clothes,.home {
+    margin-left: 20px;
+}
+.shoes,.clothes {
+    display: none;
+}
+.shoes:target {
+    display: block;
+}
+.shoes:target~.home{
+    display: none;
+}
+.clothes:target~.home{
+    display: none;
+}
+.clothes:target {
+    display: block;
+}
+/* Footer */
+.first {
+    margin-left: 20px;
+}
+.first, .second {
+    width: 35%;
+    height: 150px;
+    background-image: url('https://coolbackgrounds.io/images/backgrounds/black/pure-black-background-f9eeb41f.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;  
+}
+.second:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 84%;
+    border-bottom: 2px solid white;
+}
+.first:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 98%;
+    border-bottom: 2px solid white;
+}
+.logo_2 {
+    width: 8%;
+    padding: 20px 0 0 5px;
+    position: absolute;
+
+}
+.third {
+    width: 28%;
+    height: 150px;
+    position: relative;
+}
+.third:after {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: 100%;
+    width: 95%;
+    border-bottom: 2px solid white;
+}
+
+.email_input input[type="email"] {
+    background-color: black;
+    margin-right: 20px;
+    color: gray;
+    font-size: 14px;
+    border: 1px solid rgb(56, 55, 55);
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    width: 94%;
+}
+.foot_first,.foot_second{
+    width: 35%;
+}
+.foot_third {
+    width: 28%;
+}
+.foot_1 {
+    margin-top: 60px;
+}
+.foot_1 ul li {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.div_2 {
+    margin-right: 20%;
+}
+.div_3 {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+.div_3 ul {
+    margin-top: 20px;
+}
+.div_3:after {
+    content: "";
+    position: absolute;
+    width: 94%;
+    left: 6%;
+    top: 92%;
+    border-bottom: 1px solid gray;
+}
+.div_3>ul>li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px !important;
+}
+.foot_parent {
+    position: relative;
+}
+.foot_parent:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 106%;
+    border-bottom: 1px solid gray;
+}
